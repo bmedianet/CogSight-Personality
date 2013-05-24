@@ -64,4 +64,4 @@ If you do not receive any error message, then you have successfully authorized y
 
 Once you are authorized, you can access our API using HTTP Basic Authentication, and SSL-encrypted calls. For more information on how to use our Cognitive Insights - Personality API, check out some of our sample apps in this repository, as well as our Apigee API Console at https://apigee.com/bmnAPIs/embed/console/CogSightYou
 
-You can also find out more about our suite of APIs, Cognitive Insights, at our website, http://http://www.bmedianet.com/main.html.
+You can also find out more about our suite of APIs, Cognitive Insights, at our website, http://www.bmedianet.com/main.html.

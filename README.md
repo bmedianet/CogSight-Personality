@@ -36,14 +36,14 @@ Our algorithm is able to take unstructured text as input, parse it for important
 	<tr>
 		<th>Openness (to Experience)</th>
 		<th>Inventive/Curious</th>
-		<th>Consisten/Cautious</th>
+		<th>Consistent/Cautious</th>
 	</tr>
 </table>
 
 The REST API
 -------------------
 
-As mentioned, this repository is contains sample applications that demonstrate how to interact with the API wrapper for our personality analysis algorithm. This wrapper not only provides users access to our analysis engine, but also provides content storage and retrieval functionality. Some actions you might be able to perform using our API are: 
+As mentioned, this repository contains sample applications that demonstrate how to interact with the API wrapper for our personality analysis algorithm. This wrapper not only provides users access to our analysis engine, but also provides content storage and retrieval functionality. Some actions you might be able to perform using our API are: 
 
 * Analyze textual input from an author
 * Add an author to your content repository
@@ -51,7 +51,7 @@ As mentioned, this repository is contains sample applications that demonstrate h
 * Retrieve a list of authors from your content repository based on an inputted personality model.
 * Get personality predictions for an author over a period of time.
 
-If you wish to create your own repository and start using our Cognitive Insights - Personality API, you can get authorization and create your own repository by making the following call to your API:
+If you wish to create your own repository and start using our Cognitive Insights - Personality API, you can get authorization by making the following call to our API:
 
 		https://bpc.bmedianet.com/api/1/createUser.htm
 
@@ -60,8 +60,8 @@ In order to authorize yourself, provide the following parameters:
 		user=anyUser
 		pswd=anyPassword
 
-If you do not receive any error message, then you have successfully authorized yourself, and can start using our engine and creating your own content repository. 
+If you do not receive an error message, then you have successfully authorized yourself, and can start using our engine and populate your own content repository. 
 
-Once you are authorized, you can access our API using HTTP Basic Authentication, and SSL-encrypted calls. For more information on how to use our Cognitive Insights - Personality API, check out some of our sample apps in this repository, as well as our Apigee API Console at https://apigee.com/bmnAPIs/embed/console/CogSightYou
+Once you are authorized, you can access our API using HTTP Basic Authentication that are SSL-encrypted (HTTPS). For more information on how to use our Cognitive Insights - Personality API, check out some of our sample apps in this repository, as well as our Apigee API Console at https://apigee.com/bmnAPIs/embed/console/CogSightYou
 
-You can also find out more about our suite of APIs, Cognitive Insights, at our website, http://www.bmedianet.com/main.html.
+You can also find more information about our suite of APIs, Cognitive Insights, at our website, http://www.bmedianet.com/main.html.

@@ -40,7 +40,8 @@ Our algorithm is able to take unstructured text as input, parse it for important
 	</tr>
 </table>
 
-== The REST API
+The REST API
+-------------------
 
 As mentioned, this repository is contains sample applications that demonstrate how to interact with the API wrapper for our personality analysis algorithm. This wrapper not only provides users access to our analysis engine, but also provides content storage and retrieval functionality. Some actions you might be able to perform using our API are: 
 

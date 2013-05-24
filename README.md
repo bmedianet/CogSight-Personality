@@ -20,29 +20,29 @@ This prediction has five components, one for each of the dimensions of personali
 		<th>"No"</th>
 	</tr>
 	<tr>
-		<th>Extraversion</th>
-		<th>Extraverted</th>
-		<th>Introverted</th>
+		<td>Extraversion</td>
+		<td>Extraverted</td>
+		<td>Introverted</td>
 	</tr>
 	<tr>
-		<th>Emotional Stability</th>
-		<th>Secure/Confident</th>
-		<th>Sensitive/Nervous</th>
+		<td>Emotional Stability</td>
+		<td>Secure/Confident</td>
+		<td>Sensitive/Nervous</td>
 	</tr>
 	<tr>
-		<th>Agreeableness</th>
-		<th>Friendly/Compassionate</th>
-		<th>Cold/Unkind</th>
+		<td>Agreeableness</td>
+		<td>Friendly/Compassionate</td>
+		<td>Cold/Unkind</td>
 	</tr>
 	<tr>
-		<th>Conscientiousness</th>
-		<th>Efficient/Organized</th>
-		<th>Spontaneous/Easy-Going</th>
+		<td>Conscientiousness</td>
+		<td>Efficient/Organized</td>
+		<td>Spontaneous/Easy-Going</td>
 	</tr>
 	<tr>
-		<th>Openness (to Experience)</th>
-		<th>Inventive/Curious</th>
-		<th>Consistent/Cautious</th>
+		<td>Openness (to Experience)</td>
+		<td>Inventive/Curious</td>
+		<td>Consistent/Cautious</td>
 	</tr>
 </table>
 

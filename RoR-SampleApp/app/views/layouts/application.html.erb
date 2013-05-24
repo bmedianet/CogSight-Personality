@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <title>ROR client- BMN Pesonality </title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+</head>
+<body style="height: 100%; margin: 0px; padding: 0px">
+<div style="height: 100%; margin: 0px; padding: 0px">
+    <%= render :partial => 'layouts/header' %>
+    <%= yield %>
+    <%= render :partial => 'layouts/footer' %>
+</div>
+</body>
+</html>

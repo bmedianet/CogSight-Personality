@@ -1,0 +1,26 @@
+<div id="main_div" class="main_div_header">
+    <div class="content_div_header">
+        <%= image_tag "BMN_logo.png", :id => "bmn_logo", :class => 'bmn_logo'%></br>
+        <div class="header_links">
+            <%= link_to root_url do %>
+                Home
+            <% end %>
+            &nbsp;&nbsp;&nbsp;
+            <%= link_to all_authors_path do %>
+                All Authors
+            <% end %>
+            &nbsp;&nbsp;&nbsp;
+            <%= link_to authors_by_personality_path do %>
+                Find Authors by Personality
+            <% end %>
+            &nbsp;&nbsp;&nbsp;
+            <%= link_to author_path do %>
+                Find Author
+            <% end %>
+            &nbsp;&nbsp;&nbsp;
+            <%= link_to remove_author_path do %>
+                Remove Author
+            <% end %>
+        </div>
+    </div>
+</div>

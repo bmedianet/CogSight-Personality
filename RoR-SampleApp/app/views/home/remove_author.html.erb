@@ -1,0 +1,22 @@
+<div id="main_div" class="main_div">
+    <form id="form">
+        <div id="button_div" class="button_div">
+            <div  style="float: right; padding-right: 5px" >
+                <input type="submit" id="remove_button" value="remove" class="button">
+            </div>
+        </div>
+        <div style="clear: both; padding: 0;margin: 0;">
+        </div>
+        <div id="fields_div" class="content_div">
+            <div class="content_heading">Author ID :</div>
+            <div class="content_content"><input type="text" name="author_id" id="author_id" required> </div>
+        </div>
+    </form>
+</div>
+<script type='text/javascript'>
+    $("#form").submit(function(e) {
+        e.preventDefault();
+        PRA.deleteAuthor();
+        return false;
+    });
+</script>

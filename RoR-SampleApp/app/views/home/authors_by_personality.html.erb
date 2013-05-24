@@ -1,0 +1,84 @@
+<div id="main_div" class="main_div">
+
+    <div id="button_div" class="button_div">
+        <div  style="float: right; padding-right: 5px" >
+            <input type="button" id="find_button" value="Find" class="button">
+        </div>
+    </div>
+    <div style="clear: both">
+    </div>
+    <div id="fields_div" class="content_div">
+        <div class="content_heading">Extraversion :</div>
+        <div class="content_content">
+            <input type="radio" name="extraversion"  value="y" > y
+            <input type="radio" name="extraversion"  value="n"> n
+            <input type="radio" name="extraversion"  value="o" > o
+            <input type="radio" name="extraversion"  value="" checked="true"> don't use this trait
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">Emotional Stability :</div>
+        <div class="content_content">
+            <input type="radio" name="emotionalstability"  value="y" > y
+            <input type="radio" name="emotionalstability"  value="n"> n
+            <input type="radio" name="emotionalstability"  value="o" > o
+            <input type="radio" name="emotionalstability"  value="" checked="true"> don't use this trait
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">Agreeableness :</div>
+        <div class="content_content">
+            <input type="radio" name="agreeableness"  value="y" > y
+            <input type="radio" name="agreeableness"  value="n"> n
+            <input type="radio" name="agreeableness"  value="o" > o
+            <input type="radio" name="agreeableness"  value="" checked="true"> don't use this trait
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">Conscientiousness :</div>
+        <div class="content_content">
+            <input type="radio" name="conscientiousness"  value="y" > y
+            <input type="radio" name="conscientiousness"  value="n"> n
+            <input type="radio" name="conscientiousness"  value="o" > o
+            <input type="radio" name="conscientiousness"  value="" checked="true"> don't use this trait
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">Openness :</div>
+        <div class="content_content">
+            <input type="radio" name="openness"  value="y" > y
+            <input type="radio" name="openness"  value="n"> n
+            <input type="radio" name="openness"  value="o" > o
+            <input type="radio" name="openness"  value="" checked="true"> don't use this trait
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">Traits:</div>
+        <div class="content_content">
+            <input type="checkbox" name="traits"  value="E" checked> Extraversion
+            <input type="checkbox" name="traits"  value="S" checked> Emotional Stability
+            <input type="checkbox" name="traits"  value="A" checked> Agreeableness
+            <input type="checkbox" name="traits"  value="C" checked> Conscientiousness
+            <input type="checkbox" name="traits"  value="O" checked> Openness
+        </div>
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">No. of Authors :</div>
+        <div class="content_content"><input type="text" name="count" id="count"> </div>
+
+        <div style="clear: both">
+        </div>
+        <div class="content_heading">TimeLine:</div>
+        <div class="content_content">
+            <input type="radio" name="timeline"  value="true" > True
+            <input type="radio" name="timeline"  value="false" checked="true"> False
+        </div>
+    </div>
+
+</div>
+
+<script type='text/javascript'>
+    $("#find_button").on('click', function() {
+        PRA.getAuthorsByPersonality();
+    });
+</script>

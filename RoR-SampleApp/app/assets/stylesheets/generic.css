@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+div.main_div {
+    width:100%;
+    min-height: 600px;
+    background-color: #d0cdff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+div.main_div_header {
+    width:100%;
+    height: 150px;
+    background-color: #d0cdff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+div.main_div_footer {
+    width:100%;
+    height: 50px;
+    background-color: #d0cdff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.bmn_logo {
+    width:131px;
+    height: 68px;
+}
+div.content_div {
+    width: 900px;
+    min-height: 500px;
+    margin:0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    background-color: #99a7ce;
+}
+
+div.content_div_header {
+    width: 910px;
+    margin:0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+div.content_div_footer {
+    width: 900px;
+    margin:0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #565667;
+}
+
+div.button_div {
+    width: 900px;
+    margin:0 auto;
+    background-color: #99a7ce;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+
+div.content_heading {
+    width: 180px;
+    float: left;
+    display: inline;
+    text-align: right;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+div.content_content {
+    width: 700px;
+    float: right;
+    display: inline;
+    text-align: left;
+    overflow: hidden;
+}
+
+div.header_links {
+    width:100%;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 8px;
+    background-color: #dde5ff;
+}
+
+input.button {
+    text-align: center;
+    background-color: #605ea6;
+    border-color: #dde5ff;
+    color: #e8fdff;
+}

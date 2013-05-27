@@ -80,7 +80,7 @@ BmnPersonalityApiSkeletonRor::Application.configure do
   #     Sample URL:
   #       http://bpc.bmedianet.com/api/1/createUser.htm?user=sampleUser&pswd=samplePassword
 
-  config.sling_server = 'http://bpc.bmedianet.com'
+  config.sling_server = 'https://bpc.bmedianet.com'
   config.user_name = 'sampleUser'
   config.password = 'samplePassword'
 

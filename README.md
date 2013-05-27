@@ -21,18 +21,18 @@ This prediction has five components, one for each of the dimensions of personali
 	</tr>
 	<tr>
 		<td>Extraversion</td>
-		<td>Extraverted</td>
-		<td>Introverted</td>
+		<td>Outgoing</td>
+		<td>Quiet</td>
 	</tr>
 	<tr>
 		<td>Emotional Stability</td>
 		<td>Secure/Confident</td>
-		<td>Sensitive/Nervous</td>
+		<td>Sensitive/Anxious</td>
 	</tr>
 	<tr>
 		<td>Agreeableness</td>
-		<td>Friendly/Compassionate</td>
-		<td>Cold/Unkind</td>
+		<td>Empathetic</td>
+		<td>Unempathetic</td>
 	</tr>
 	<tr>
 		<td>Conscientiousness</td>

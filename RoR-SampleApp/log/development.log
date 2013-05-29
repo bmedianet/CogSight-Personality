@@ -1,0 +1,73 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-29 10:07:51 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Compiled generic.css  (0ms)  (pid 73968)
+Compiled application.css  (10ms)  (pid 73968)
+Compiled jquery.js  (2ms)  (pid 73968)
+Compiled jquery_ujs.js  (0ms)  (pid 73968)
+Compiled pra.js  (0ms)  (pid 73968)
+Compiled application.js  (93ms)  (pid 73968)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 252ms (Views: 251.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /generic.css - 200 OK (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /application.js - 200 OK (39ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /pra.js - 200 OK (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:07:52 -0400
+Served asset /BMN_logo.png - 200 OK (8ms)
+
+
+Started POST "/bmn-personality-api-skeleton-ror/add_authors" for 127.0.0.1 at 2013-05-29 10:10:18 -0400
+Processing by HomeController#add_authors as */*
+  Parameters: {"text"=>"{\"kazaam\":{\"Wed May 29 2013 10:10:18 GMT-0400\":\"I am kazaam!\",\"Wed May 29 2013 10:10:18 GMT-0400\":\"Actually, I'm Shaquille O'Neal.\",\"Wed May 29 2013 10:10:18 GMT-0400\":\"Please, make a wish!\"}}"}
+request #<Net::HTTP::Post:0x007fa543c5fa68>
+Completed 500 Internal Server Error in 480ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:40:in `add_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started POST "/bmn-personality-api-skeleton-ror/add_authors" for 127.0.0.1 at 2013-05-29 10:12:42 -0400
+Processing by HomeController#add_authors as */*
+  Parameters: {"text"=>"{\"kazaam\":{\"Wed May 29 2013 10:12:42 GMT-0400\":\"I am kazaam!\",\"Wed May 29 2013 10:12:42 GMT-0400\":\"Actually, I'm Shaquille O'Neal.\",\"Wed May 29 2013 10:12:42 GMT-0400\":\"Please, make a wish!\"}}"}
+request #<Net::HTTP::Post:0x007fa543bde800>
+Completed 500 Internal Server Error in 53ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:40:in `add_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)

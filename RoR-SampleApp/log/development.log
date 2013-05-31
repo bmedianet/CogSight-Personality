@@ -71,3 +71,941 @@ Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD H
   Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
   Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
   Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Compiled generic.css  (0ms)  (pid 74042)
+Compiled application.css  (10ms)  (pid 74042)
+Compiled jquery.js  (33ms)  (pid 74042)
+Compiled jquery_ujs.js  (0ms)  (pid 74042)
+Compiled pra.js  (0ms)  (pid 74042)
+Compiled application.js  (70ms)  (pid 74042)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 202ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /pra.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /generic.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:16:22 -0400
+Served asset /BMN_logo.png - 304 Not Modified (7ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:16:24 -0400
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369836984834" for 127.0.0.1 at 2013-05-29 10:16:27 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369836984834"}
+Completed 500 Internal Server Error in 107ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:100:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/authors_by_personality" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Processing by HomeController#authors_by_personality as HTML
+  Rendered home/authors_by_personality.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:19:09 -0400
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:19:12 -0400
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:21:45 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (2.4ms)
+Compiled pra.js  (0ms)  (pid 74044)
+Compiled application.js  (3ms)  (pid 74044)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /pra.js - 200 OK (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /generic.css - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:21:46 -0400
+Served asset /BMN_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369837306155" for 127.0.0.1 at 2013-05-29 10:21:48 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369837306155"}
+Completed 500 Internal Server Error in 52ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:100:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:23:34 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /application.js - 304 Not Modified (38ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /generic.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /pra.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:23:35 -0400
+Served asset /BMN_logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369837415117" for 127.0.0.1 at 2013-05-29 10:23:36 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369837415117"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Net::HTTPS):
+  app/controllers/home_controller.rb:98:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:24:49 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#all_authors as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant Net::HTTPS):
+  app/controllers/home_controller.rb:128:in `http_setup_sling'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:24:53 -0400
+Processing by HomeController#all_authors as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant Net::HTTPS):
+  app/controllers/home_controller.rb:128:in `http_setup_sling'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /generic.css - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /application.js - 304 Not Modified (39ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /pra.js - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:26:43 -0400
+Served asset /BMN_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369837603626" for 127.0.0.1 at 2013-05-29 10:26:48 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369837603626"}
+Completed 500 Internal Server Error in 65ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:100:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-29 10:29:01 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /generic.css - 304 Not Modified (6ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /pra.js - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-29 10:29:02 -0400
+Served asset /BMN_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369837742147" for 127.0.0.1 at 2013-05-29 10:29:04 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369837742147"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 108ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369837742148" for 127.0.0.1 at 2013-05-29 10:31:29 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369837742148"}
+Completed 500 Internal Server Error in 64ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:100:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-30 15:29:30 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 124ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (40ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /generic.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /pra.js - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-30 15:29:31 -0400
+Served asset /BMN_logo.png - 304 Not Modified (17ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at 2013-05-30 15:29:35 -0400
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369942175538" for 127.0.0.1 at 2013-05-30 15:29:37 -0400
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"count"=>"", "timeline"=>"false", "traits"=>"ESACO", "_"=>"1369942175538"}
+Completed 500 Internal Server Error in 905ms
+
+Net::HTTPBadResponse (wrong status line: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"):
+  app/controllers/home_controller.rb:100:in `get_all_authors'
+
+
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/zc/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 31 02:05:09 -0400 2013
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Compiled jquery.js  (5ms)  (pid 634)
+Compiled jquery_ujs.js  (0ms)  (pid 634)
+Compiled application.js  (119ms)  (pid 634)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 169ms (Views: 168.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /generic.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /pra.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (5ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (83.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:05:10 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/bmn-personality-api-skeleton-ror/add_authors" for 127.0.0.1 at Fri May 31 02:05:45 -0400 2013
+Processing by HomeController#add_authors as */*
+  Parameters: {"text"=>"{\"haza\":{\"Fri May 31 2013 02:05:45 GMT-0400\":\"blah blah blah!\"},\"hava\":{\"Fri May 31 2013 02:05:45 GMT-0400\":\"blarg blarg blarg!!\"}}"}
+request #<Net::HTTP::Post:0x10d25bd78>
+  Rendered text template (0.0ms)
+Completed 200 OK in 515ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:05:54 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 31 02:13:32 -0400 2013
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:13:32 -0400 2013
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:13:32 -0400 2013
+Served asset /jquery.js - 304 Not Modified (68ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /generic.css - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /pra.js - 304 Not Modified (3ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:13:33 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369980813343" for 127.0.0.1 at Fri May 31 02:13:41 -0400 2013
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"_"=>"1369980813343", "timeline"=>"false", "traits"=>"ESACO", "count"=>""}
+  Rendered text template (0.0ms)
+Completed 200 OK in 627ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors_by_personality" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Processing by HomeController#authors_by_personality as HTML
+  Rendered home/authors_by_personality.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:13:45 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:13:46 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_authors_by_personality?count=&timeline=false&traits=ESACO&Extraversion=o&EmotionalStability=&Agreeableness=&Conscientiousness=&Openness=&_=1369980826026" for 127.0.0.1 at Fri May 31 02:13:51 -0400 2013
+Processing by HomeController#get_authors_by_personality as */*
+  Parameters: {"_"=>"1369980826026", "timeline"=>"false", "Openness"=>"", "EmotionalStability"=>"", "Conscientiousness"=>"", "Extraversion"=>"o", "Agreeableness"=>"", "traits"=>"ESACO", "count"=>""}
+  Rendered text template (0.0ms)
+Completed 200 OK in 174ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:14:01 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/all_authors" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Processing by HomeController#all_authors as HTML
+  Rendered home/all_authors.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:14:02 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/bmn-personality-api-skeleton-ror/add_authors" for 127.0.0.1 at Fri May 31 02:14:31 -0400 2013
+Processing by HomeController#add_authors as */*
+  Parameters: {"text"=>"{\"Kazaam\":{\"Fri May 31 2013 02:14:31 GMT-0400\":\"I am kazaam!!!\",\"Fri May 31 2013 02:14:31 GMT-0400\":\"I now grant you three wishes.\"}}"}
+request #<Net::HTTP::Post:0x104de0288>
+  Rendered text template (0.0ms)
+Completed 200 OK in 363ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:14:35 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/authors_by_personality" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Processing by HomeController#authors_by_personality as HTML
+  Rendered home/authors_by_personality.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:14:46 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_all_authors?count=&timeline=false&traits=ESACO&_=1369980842358" for 127.0.0.1 at Fri May 31 02:14:53 -0400 2013
+Processing by HomeController#get_all_authors as */*
+  Parameters: {"_"=>"1369980842358", "timeline"=>"false", "traits"=>"ESACO", "count"=>""}
+  Rendered text template (0.0ms)
+Completed 200 OK in 383ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/author" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Processing by HomeController#author as HTML
+  Rendered home/author.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.css?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/generic.css?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /generic.css - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery.js?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/application.js?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/pra.js?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /pra.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/assets/BMN_logo.png" for 127.0.0.1 at Fri May 31 02:15:01 -0400 2013
+Served asset /BMN_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/bmn-personality-api-skeleton-ror/get_author?ID=Kazaam&_=1369980901868" for 127.0.0.1 at Fri May 31 02:15:05 -0400 2013
+Processing by HomeController#get_author as */*
+  Parameters: {"_"=>"1369980901868", "ID"=>"Kazaam"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 393ms (Views: 0.8ms | ActiveRecord: 0.0ms)

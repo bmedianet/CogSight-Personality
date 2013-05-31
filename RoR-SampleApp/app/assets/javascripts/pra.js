@@ -55,6 +55,13 @@ PRA.getAuthorsByPersonality = function() {
     var a = $('input[name=agreeableness]:checked').val();
     var c = $('input[name=conscientiousness]:checked').val();
     var o = $('input[name=openness]:checked').val();
+    var traits = '';
+    $("input[name=traits]:checked").each(
+        function() {
+           traits = traits+$(this).val();
+        }
+    );
+    
     $.ajax({
         type: 'get',
         url: "/bmn-personality-api-skeleton-ror/get_authors_by_personality?count=" + count+"&timeline="+timeline+"&traits="+traits+"&Extraversion="+e+"&EmotionalStability="+s+"&Agreeableness="+a+"&Conscientiousness="+c+"&Openness="+o,

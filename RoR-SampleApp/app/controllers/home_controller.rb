@@ -1,4 +1,4 @@
-require "net/http"
+require "net/https"
 require "uri"
 
 class HomeController < ApplicationController
@@ -63,6 +63,7 @@ class HomeController < ApplicationController
   def get_authors_by_personality
       count = params[:count] # Optional - and must be an integer. Cuts the amount of authors return down to the number specified.
       timeline = params[:timeline] # Optional - and must be boolean. Determines whether to return personality predictions by day, month, and year.
+      traits = params[:traits]
       e = params[:E] # Optional - and must be y, n or o. Extraversion personality trait. 
       s = params[:S] # Optional - and must be y, n or o. Emotional Stability personality trait. 
       a = params[:A] # Optional - and must be y, n or o. Agreeableness personality trait. 
@@ -125,7 +126,10 @@ class HomeController < ApplicationController
   def http_setup_sling
     server = BmnPersonalityApiSkeletonRor::Application.config.sling_server
     uri = URI.parse(server)
+    # @http = Net::HTTP.new(uri.host, uri.port)
     @http = Net::HTTP.new(uri.host, uri.port)
+    @http.use_ssl = true
+    @http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   end
 end
 

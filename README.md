@@ -71,6 +71,6 @@ In order to authorize yourself, provide the following parameters:
 
 If you do not receive an error message, then you have successfully authorized yourself, and can start using our engine and populate your own content repository. 
 
-Once you are authorized, you can access our API using HTTP Basic Authentication that is SSL-encrypted (HTTPS). For more information on how to use our Cognitive Insights - Personality API, check out some of our sample apps in this repository, as well as our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou
+Once you are authorized, you can access our API using HTTP Basic Authentication that is SSL-encrypted (HTTPS). For more information on how to use our Cognitive Insights - Personality API, check out some of our sample apps in this repository, as well as our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou. If you are looking for more information about what an API Console is, Apigee has an overview description at http://apigee.com/docs/enterprise/content/whats-api-console.
 
-You can also find more information about our suite of APIs, Cognitive Insights, at our website, http://www.bmedianet.com/main.html.
+You can also find more information about our suite of APIs, Cognitive Insights, at our website, http://www.bmedianet.com/personalityapi.html.

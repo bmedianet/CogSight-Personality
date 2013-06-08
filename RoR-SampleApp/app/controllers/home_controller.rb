@@ -32,7 +32,7 @@ class HomeController < ApplicationController
   def add_authors
     text = params[:text]
     puts "str:#{text}"
-    request = Net::HTTP::Post.new("/api/1/add_authors.json")
+    request = Net::HTTP::Post.new("/personality-api/1/add_authors.json")
     request.basic_auth BmnPersonalityApiSkeletonRor::Application.config.user_name, BmnPersonalityApiSkeletonRor::Application.config.password
     request.set_form_data({ :text => text
                           })
@@ -49,7 +49,7 @@ class HomeController < ApplicationController
   def get_author
     id = params[:ID]
     puts "ID:#{id}"
-    request = Net::HTTP::Get.new("/api/1/author.json?ID=#{id}")
+    request = Net::HTTP::Get.new("/personality-api/1/author.json?ID=#{id}")
     request.basic_auth BmnPersonalityApiSkeletonRor::Application.config.user_name, BmnPersonalityApiSkeletonRor::Application.config.password
     response = @http.request(request)
     render :text => response.body
@@ -77,7 +77,7 @@ class HomeController < ApplicationController
       puts "c:#{c}"
       puts "o:#{o}"
 
-      request = Net::HTTP::Get.new("/api/1/authors_by_personality.json?count=#{count}&timeline=#{timeline}&Extraversion=#{e}&EmotionalStability=#{s}&Agreeableness=#{a}&Conscientiousness=#{c}&Openness=#{o}")
+      request = Net::HTTP::Get.new("/personality-api/1/authors_by_personality.json?count=#{count}&timeline=#{timeline}&Extraversion=#{e}&EmotionalStability=#{s}&Agreeableness=#{a}&Conscientiousness=#{c}&Openness=#{o}")
       request.basic_auth BmnPersonalityApiSkeletonRor::Application.config.user_name, BmnPersonalityApiSkeletonRor::Application.config.password
       response = @http.request(request)
       render :text => response.body
@@ -96,7 +96,7 @@ class HomeController < ApplicationController
       puts "timeline:#{timeline}"
       puts "traits:#{traits}"
 
-      request = Net::HTTP::Get.new("/api/1/all_authors.json?count=#{count}&timeline=#{timeline}&traits=#{traits}")
+      request = Net::HTTP::Get.new("/personality-api/1/all_authors.json?count=#{count}&timeline=#{timeline}&traits=#{traits}")
       request.basic_auth BmnPersonalityApiSkeletonRor::Application.config.user_name, BmnPersonalityApiSkeletonRor::Application.config.password
       response = @http.request(request)
       render :text => response.body
@@ -110,7 +110,7 @@ class HomeController < ApplicationController
   def delete_author
       id = params[:ID]
       puts "id:#{id}"
-      request = Net::HTTP::Post.new("/api/1/remove_author.json")
+      request = Net::HTTP::Post.new("/personality-api/1/remove_author.json")
       request.basic_auth BmnPersonalityApiSkeletonRor::Application.config.user_name, BmnPersonalityApiSkeletonRor::Application.config.password
       request.set_form_data({ :ID => id
                             })

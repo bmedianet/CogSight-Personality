@@ -9,10 +9,10 @@ Authorization
 In order to get you started on interacting with our API, this sample app comes pre-packaged with username/password combination that has already been authorized. The username/password combination is sampleUser/samplePassword (see /config/environments/development.rb file). However, if you wish to start out by authorizing and manipulating your own repository, you can get authorization using the following steps:
 
 * Pick a unique username/password combination you wish to use to authenticate your app in the future. 
-* Make a request to https://bpc.bmedianet.com/api/1/createUser.htm. Your request must be SSL-encrypted, and must contain the following parameters: user, pswd. Set "user" equal to your desired username, and "pswd" equal to your desired password. The request will look like this:
-	https://bpc.bmedianet.com/api/1/createUser.htm?user=myUsername&pswd=myPassword
+* Make a request to https://bpc.bmedianet.com/api/1/createUser.json. Your request must be SSL-encrypted, and must contain the following parameters: user, pswd. Set "user" equal to your desired username, and "pswd" equal to your desired password. The request will look like this:
+	https://bpc.bmedianet.com/api/1/createUser.json?user=myUsername&pswd=myPassword
 * If you recieve and error message, then either some part of the combination you provided already exists, or it was not a valid input. Please adjust your request accordingly and try again.
-* If you are successful, then your response will contain an htm string that says "User successfully created". This means that you are now authorized to use the API, and can access/create your own data using that username/password combination.
+* If you are successful, then your response will contain a json-formatted string that says "User successfully created". This means that you are now authorized to use the API, and can access/create your own data using that username/password combination.
 
 Make sure that, once you are authorized, you update your forked RoR Sample App accordingly so that you are making calls to your repository, instead of to the provided one. This can be done by changing the config.user_name and config.password variables to your username and password respectively inside of the /config/environments/development.rb and /config/environments/production.rb as desired.
 

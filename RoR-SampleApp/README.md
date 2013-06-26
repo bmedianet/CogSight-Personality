@@ -29,7 +29,7 @@ Once the rails server is running, you will be able to view this sample app by go
 
 	http://localhost:3000/
 
-Here, you will see a very basic user interface that will allow you to make requests to our REST API. All of the possible requests to our API are listed at the top of the home page for this sample app. If you wish to learn more about what each request does, take a look at the documentation for the Cognitive Insights - Personality REST API provided at our website: http://www.bmedianet.com/apis.html. Also, take a look at our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou.
+Here, you will see a very basic user interface that will allow you to make requests to our REST API. All of the possible requests to our API are listed at the top of the home page for this sample app. If you wish to learn more about what each request does, take a look at the documentation for the Cognitive Insights - Personality REST API provided at our website: http://www.bmedianet.com/personalityapi.html. Also, take a look at our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou.
 
 Each API call's response will show up for you in an alert dialogue window from your browser. This alert dialogue will show you the JSON-formatted response that each request responds with. 
 
@@ -38,4 +38,4 @@ Once you are familiar with the requests and their responses, you can look furthe
 * /app/controllers/home_controller.rb - Ruby code that makes the https requests and recieves the responses
 * /app/assets/javascripts/pra.js - the javascript code that gets the data for the https requests from the user interface provided
 
-Most of the information needed for understanding how to interact with our API should be clear after following the steps listed above. However, if you are still unclear about the API, or have questions for us that are not answered by the sample app, or the API documentation, don't hesitate to contact us on Stack Overflow by using the tag "cognitive-insights" or "bmn", or on our website (http://www.bmedianet.com/form.html).
+Most of the information needed for understanding how to interact with our API should be clear after following the steps listed above. However, if you are still unclear about the API, or have questions for us that are not answered by the sample app, or the API documentation, don't hesitate to contact us on Stack Overflow by using the tag "cognitive-insights" or "bmn", or on our website (http://www.bmedianet.com/contact.html).

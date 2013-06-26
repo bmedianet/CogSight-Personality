@@ -21,9 +21,9 @@ All of our API calls are SSL-encrypted, and require HTTP Basic Authentication.
 Using the Sample App
 ----------------------
 
-Now that you are either using our sample username/password, or your own, you can start using the JS app. In order to view the environment, go in to either the ClientPersonality folder or the ClientThemes foler (depending on which API you prefer to work with) and open the index.html file in your browser of choice.
+Now that you are either using our sample username/password, or your own, you can start using the JS app. In order to view the environment, go in to the ClientPersonality folder and open the index.html file in your browser of choice.
 
-Once open, you will see a very basic user interface that will allow you to make requests to our REST API. All of the possible requests to our API are listed at the top of the home page for this sample app. If you wish to learn more about what each request does, take a look at the documentation for the Cognitive Insights - Personality REST API provided at our website: http://www.bmedianet.com/apis.html. Also, take a look at our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou.
+Once open, you will see a very basic user interface that will allow you to make requests to our REST API. All of the possible requests to our API are listed at the top of the home page for this sample app. If you wish to learn more about what each request does, take a look at the documentation for the Cognitive Insights - Personality REST API provided at our website: http://www.bmedianet.com/personalityapi.html. Also, take a look at our Apigee API Console: https://apigee.com/bmnAPIs/embed/console/CogSightYou.
 
 Each API call's response will show up for you in an alert dialogue window from your browser. This alert dialogue will show you the JSON-formatted response that each request responds with. 
 

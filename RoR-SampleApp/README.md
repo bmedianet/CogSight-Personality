@@ -38,4 +38,4 @@ Once you are familiar with the requests and their responses, you can look furthe
 * /app/controllers/home_controller.rb - Ruby code that makes the https requests and recieves the responses
 * /app/assets/javascripts/pra.js - the javascript code that gets the data for the https requests from the user interface provided
 
-Most of the information needed for understanding how to interact with our API should be clear after following the steps listed above. However, if you are still unclear about the API, or have questions for us that are not answered by the sample app, or the API documentation, don't hesitate to contact us on Quora (http://www.quora.com/BMediaNet-APIs) or our website (http://www.bmedianet.com/form.html), 
+Most of the information needed for understanding how to interact with our API should be clear after following the steps listed above. However, if you are still unclear about the API, or have questions for us that are not answered by the sample app, or the API documentation, don't hesitate to contact us on Stack Overflow by using the tag "cognitive-insights" or "bmn", or on our website (http://www.bmedianet.com/form.html).
